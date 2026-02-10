@@ -14,3 +14,9 @@ apt update && apt install fail2ban -y
 # Asegurar que el servicio inicie automáticamente
 systemctl start fail2ban
 systemctl enable fail2ban
+
+
+2. Configuración de la "Cárcel" (jail.local)
+Para evitar que las actualizaciones del sistema borren nuestra configuración, trabajaremos exclusivamente en jail.local.
+
+Paso A: Crear el archivo limpio
