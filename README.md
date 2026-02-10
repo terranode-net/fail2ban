@@ -1,7 +1,16 @@
-1. Instalación de Fail2Ban
-Como ya eres root, ejecuta estos comandos para instalarlo y asegurarte de que arranque siempre con el servidor:
+# 🛡️ Manual de Instalación y Configuración: Fail2Ban Fortaleza
 
-apt update
-apt install fail2ban -y
+Este manual detalla la instalación y configuración de **Fail2Ban** para proteger un servidor Linux contra ataques de fuerza bruta en SSH, FTP y MySQL.
+
+---
+
+## 1. Instalación
+Ejecuta los siguientes comandos como usuario **root**:
+
+```bash
+# Actualizar repositorios e instalar
+apt update && apt install fail2ban -y
+
+# Asegurar que el servicio inicie automáticamente
 systemctl start fail2ban
 systemctl enable fail2ban
